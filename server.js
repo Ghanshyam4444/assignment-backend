@@ -11,12 +11,13 @@ const connectDB = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-  origin: "https://assignment-frontend-zeta-cyan.vercel.app/login",
+  origin: "https://assignment-frontend-zeta-cyan.vercel.app",
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
   Credentials: true,
 };
 app.use(express.json());
 app.use(cors(corsOptions));
+
 app.use("/api/auth", authRoute);
 app.use("/api/admin", adminRoute);
 app.use("/api/User", UserRoute);
