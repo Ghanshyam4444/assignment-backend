@@ -11,7 +11,7 @@ const connectDB = require("./utils/db");
 const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
-  origin: "http://localhost:5173",
+  origin: "https://assignment-frontend-zeta-cyan.vercel.app/login",
   methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
   Credentials: true,
 };
