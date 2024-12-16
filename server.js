@@ -12,7 +12,7 @@ const errorMiddleware = require("./middlewares/error-middleware");
 
 const corsOptions = {
   origin: "https://assignment-frontend-zeta-cyan.vercel.app/login",
-  methods: "GET,POST,PUT,DELETE,PATCH,HEAD",
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "HEAD"],
   Credentials: true,
 };
 app.use(express.json());
